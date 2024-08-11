@@ -11,8 +11,8 @@
 
   //Button
   --BtnPadding: 0 16px;
-  --BtnBorderRadius: 20px;
-  --BtnFontSize: 12px;
+  --BtnBorderRadius: 10px;
+  --BtnFontSize: 10px;
   --BtnActiveBgColor: black;
   --BtnActiveHoverBgColor: gray;
   --BtnActiveFontColor: white;
@@ -53,7 +53,6 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, a, p, header, b, nav {
   margin: 0;
-  white-space: nowrap;
   font-family: 'Work Sans Variable', sans-serif;
   color: white;
 }

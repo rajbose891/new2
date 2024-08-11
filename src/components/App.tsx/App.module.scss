@@ -1,0 +1,38 @@
+.myContainer {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.myParentContainer {
+  border: 1px solid black;
+  padding: 10px;
+  height: 100%;
+  min-width: 100px;
+  background: green;
+}
+
+.Box {
+  background: rgb(27,12,131);
+  background: linear-gradient(90deg, rgba(27,12,131,0.2685111667798913) 0%, rgba(68,68,75,0.9757575767627661) 0%);
+  border-radius: 20px;
+}
+.myRole {
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid black;
+  gap: 20px;
+}
+.shape {
+  width: 188px;
+  height: 140px;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+
+  .Box {
+    background: rgb(27, 12, 131);
+    background: linear-gradient(90deg, rgba(27, 12, 131, 0.2685111667798913) 0%, rgba(68, 68, 75, 0.9757575767627661) 0%);
+    border-radius: 20px;
+  }
+}

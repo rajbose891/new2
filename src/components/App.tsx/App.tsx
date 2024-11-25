@@ -8,7 +8,8 @@ import { Middle } from '../Middle.tsx';
 
 export default function App() {
     return (
-        <SFlex width={'100%'} style={{ background: 'goldenrod' }} align={'center'} justify={'center'} paddingTop={30} paddingBottom={30}>
+        <SFlex width={'100%'} style={{ background: 'goldenrod' }} align={'center'} justify={'center'} paddingTop={30}
+               paddingBottom={30}>
             <SFlex
                 justify={'space-between'}
                 width={'90%'}
@@ -30,7 +31,7 @@ export default function App() {
                         }}
                         align={'center'}
                     >
-                        <br /> <FaSearch style={{ color: 'goldenrod' }}></FaSearch>
+                        <br /> <FaSearch style={{ color: 'lightgrey' }}></FaSearch>
                         <h6> Search everything</h6>
                     </SFlex>
                     <br />
@@ -48,8 +49,10 @@ export default function App() {
                     >
                         <SFlex direction={'column'} paddingTop={15}>
                             <h5 style={{ color: 'goldenrod' }}>NFT marketplace</h5>
-                            <h2 style={{ color: 'whitesmoke', fontStyle: '-moz-initial' }}>Play game, collect item and earn money with Viego</h2>
-                            <SFlex width={200} height={30} align={'center'} justify={'center'} style={{ background: 'goldenrod', borderRadius: '15px' }}>
+                            <h2 style={{ color: 'whitesmoke', fontStyle: '-moz-initial' }}>Play game, collect item and
+                                earn money with Viego</h2>
+                            <SFlex width={200} height={30} align={'center'} justify={'center'}
+                                   style={{ background: 'goldenrod', borderRadius: '15px' }}>
                                 <h5 style={{ color: 'white' }}>Place a bit </h5>
                             </SFlex>
                         </SFlex>
@@ -65,11 +68,13 @@ export default function App() {
                 <SFlex justify={'space-between'} width={'100%'} direction={'column'} paddingTop={20} padding={10}>
                     <SFlex justify={'space-between'} width={'100%'} padding={20}>
                         <SFlex>
-                            <SFlex className={styles.Box} style={{ borderRadius: '100px' }} width={25} height={25} align={'center'} justify={'center'}>
+                            <SFlex className={styles.Box} style={{ borderRadius: '100px' }} width={25} height={25}
+                                   align={'center'} justify={'center'}>
                                 <IoBagOutline style={{ color: 'white' }}></IoBagOutline>
                             </SFlex>
                             <br />
-                            <SFlex className={styles.Box} style={{ borderRadius: '100px' }} width={25} height={25} align={'center'} justify={'center'}>
+                            <SFlex className={styles.Box} style={{ borderRadius: '100px' }} width={25} height={25}
+                                   align={'center'} justify={'center'}>
                                 <IoNotificationsOutline style={{ color: 'white' }}></IoNotificationsOutline>
                             </SFlex>
                         </SFlex>
@@ -109,7 +114,8 @@ export default function App() {
                                 <h4>$28,768</h4>
                             </SFlex>
                         </SFlex>
-                        <SFlex width={'100%'} height={70} align={'center'} justify={'center'} style={{ background: 'goldenrod', borderRadius: '10px' }}>
+                        <SFlex width={'100%'} height={70} align={'center'} justify={'center'}
+                               style={{ background: 'goldenrod', borderRadius: '10px' }}>
                             <h5 style={{ color: 'white' }}>Deposit </h5>
                         </SFlex>
                         <SFlex paddingTop={5} justify={'space-between'} width={'100%'}>
@@ -121,7 +127,8 @@ export default function App() {
                             <h3>Transactions</h3>
                             <h6>View all</h6>
                         </SFlex>
-                        <SFlex direction={'column'} justify={'space-between'} height={'100%'} width={'100%'} marginBottom={10}>
+                        <SFlex direction={'column'} justify={'space-between'} height={'100%'} width={'100%'}
+                               marginBottom={10}>
                             <SFlex justify={'space-between'} width={'100%'}>
                                 <SButton style={{ background: 'transparent' }}>
                                     <FaChessKing style={{ background: 'transparent' }}></FaChessKing>

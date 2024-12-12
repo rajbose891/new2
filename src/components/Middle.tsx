@@ -1,101 +1,461 @@
-import { SFlex, SImage } from 'react-simple-ui-lib';
-import { FaRegHeart } from 'react-icons/fa';
+import { SButton, SFlex, SImage } from 'react-simple-ui-lib';
+import { FaRegHeart, FaSearch } from 'react-icons/fa';
 import styles from './App.tsx/App.module.scss';
+import { CiDiscount1 } from 'react-icons/ci';
+import { GiMeal } from 'react-icons/gi';
+import { LuHotel } from 'react-icons/lu';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 
 export function Middle() {
     return (
-        <SFlex direction={'column'}>
-            <SFlex justify={'space-between'} width={'100%'}>
-                <SFlex width={380} height={170} paddingTop={10} padding={10} className={styles.Box}>
-                    <SFlex direction={'column'} padding={10}>
-                        <SFlex width={100} height={20} align={'center'} justify={'center'} style={{ background: 'goldenrod', borderRadius: '15px' }}>
-                            <h5 style={{ color: 'white' }}>Time </h5>
-                        </SFlex>
-                        <h6 style={{ color: 'whitesmoke' }}>Golden king Armor</h6>
-                        <h8 style={{ color: 'whitesmoke' }}>A golden armor of a sky angel that contains the shine</h8>
-                        <s style={{ color: 'whitesmoke' }}>Current bid</s>
-                        <h6 style={{ color: 'whitesmoke' }}>1.23 ETH</h6>
-                    </SFlex>
-                    <SImage src={'/22.jpeg'} backgroundSize={'contain'} height={150} width={150} />
+        <SFlex width={'100%'} height={'auto'}>
+            <SFlex direction={'column'} width={'100%'}>
+                <SFlex justify={'space-between'} width={'100%'} paddingTop={10}>
+                    <h5>MOST POPULAR TREK</h5>
+                    <SButton>
+                        <h5>View all</h5>
+                    </SButton>
                 </SFlex>
+                <SFlex direction={'column'} width={'100%'}>
+                    <SFlex justify={'space-between'} width={'100%'}>
+                        <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                            <SImage
+                                src={'/6549.webp'}
+                                backgroundSize={'cover'}
+                                width={'100%'}
+                                height={'100%'}
+                                align={'center'}
+                                justify={'center'}
+                                style={{ borderRadius: '15px' }}
+                            >
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <a href="https://www.holidify.com/places/manali/map-view.html">MANALI</a>
+                                </SButton>
+                            </SImage>
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <p>Rs. 00000</p>
+                            </SButton>
+                        </SFlex>
+                        <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                            <SImage
+                                src={'/3214.jpg'}
+                                backgroundSize={'cover'}
+                                width={'100%'}
+                                height={'100%'}
+                                align={'center'}
+                                justify={'center'}
+                                style={{ borderRadius: '15px' }}
+                            >
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <a href="https://www.holidify.com/places/kedarnath/map-view.html">KEDARNATH</a>
+                                </SButton>
+                            </SImage>
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <p>Rs. 00000</p>
+                            </SButton>
+                        </SFlex>
+                        <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                            <SImage
+                                src={'/7456.jpg'}
+                                backgroundSize={'cover'}
+                                width={'100%'}
+                                height={'100%'}
+                                align={'center'}
+                                justify={'center'}
+                                style={{ borderRadius: '15px' }}
+                            >
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <a href="https://www.holidify.com/places/ladakh/map-view.html">Ladakh</a>
+                                </SButton>
+                            </SImage>
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <p>Rs. 00000</p>
+                            </SButton>
+                        </SFlex>
+                        <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                            <SImage
+                                src={'/2587.webp'}
+                                backgroundSize={'cover'}
+                                width={'100%'}
+                                height={'100%'}
+                                align={'center'}
+                                justify={'center'}
+                                style={{ borderRadius: '15px' }}
+                            >
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <a href="https://www.holidify.com/places/auli/map-view.html">AULI</a>
+                                </SButton>
+                            </SImage>
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <p>Rs. 00000</p>
+                            </SButton>
+                        </SFlex>
+                    </SFlex>
 
-                <SFlex direction={'column'} align={'end'}>
-                    <SFlex width={380} height={170} paddingTop={10} padding={10} className={styles.Box}>
-                        <SFlex direction={'column'} padding={10}>
-                            <SFlex width={100} height={20} align={'center'} justify={'center'} style={{ background: 'goldenrod', borderRadius: '15px' }}>
-                                <h5 style={{ color: 'white' }}>Time </h5>
+                    <br />
+                    <SFlex
+                        width={'70%'}
+                        height={'100%'}
+                        style={{
+                            background: 'rgb(96,147,161)',
+                            background: 'linear-gradient(90deg, rgba(96,147,161,1) 0%, rgba(76,195,230,1) 42%)',
+                            borderRadius: '10px',
+                        }}
+                        align={'end'}
+                        justify={'space-between'}
+                    >
+                        <SButton>
+                            <FaSearch style={{ color: 'lightgrey' }}></FaSearch>
+                        </SButton>
+
+                        <h4> Search your dream destination........</h4>
+                    </SFlex>
+                </SFlex>
+                <SFlex paddingTop={15} justify={'space-between'} width={'100%'}>
+                    <h5>MOST POPULAR TOUR</h5>
+                    <SButton>
+                        <h5>Choose Your's</h5>
+                    </SButton>
+                </SFlex>
+                <SFlex justify={'space-between'} width={'100%'}>
+                    <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                        <SImage
+                            src={'/4444.jpg'}
+                            backgroundSize={'cover'}
+                            width={'100%'}
+                            height={'100%'}
+                            align={'center'}
+                            justify={'center'}
+                            style={{ borderRadius: '15px' }}
+                        >
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                            </SButton>
+                        </SImage>
+                        <SButton
+                            width={100}
+                            height={20}
+                            align={'start'}
+                            justify={'center'}
+                            style={{
+                                borderRadius: '15px',
+                            }}
+                        >
+                            <p>Rs. 00000</p>
+                        </SButton>
+                    </SFlex>{' '}
+                    <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                        <SImage
+                            src={'/4444.jpg'}
+                            backgroundSize={'cover'}
+                            width={'100%'}
+                            height={'100%'}
+                            align={'center'}
+                            justify={'center'}
+                            style={{ borderRadius: '15px' }}
+                        >
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                            </SButton>
+                        </SImage>
+                        <SButton
+                            width={100}
+                            height={20}
+                            align={'start'}
+                            justify={'center'}
+                            style={{
+                                borderRadius: '15px',
+                            }}
+                        >
+                            <p>Rs. 00000</p>
+                        </SButton>
+                    </SFlex>
+                    <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                        <SImage
+                            src={'/4444.jpg'}
+                            backgroundSize={'cover'}
+                            width={'100%'}
+                            height={'100%'}
+                            align={'center'}
+                            justify={'center'}
+                            style={{ borderRadius: '15px' }}
+                        >
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                            </SButton>
+                        </SImage>
+                        <SButton
+                            width={100}
+                            height={20}
+                            align={'start'}
+                            justify={'center'}
+                            style={{
+                                borderRadius: '15px',
+                            }}
+                        >
+                            <p>Rs. 00000</p>
+                        </SButton>
+                    </SFlex>
+                    <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                        <SImage
+                            src={'/4444.jpg'}
+                            backgroundSize={'cover'}
+                            width={'100%'}
+                            height={'100%'}
+                            align={'center'}
+                            justify={'center'}
+                            style={{ borderRadius: '15px' }}
+                        >
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                            </SButton>
+                        </SImage>
+                        <SButton
+                            width={100}
+                            height={20}
+                            align={'start'}
+                            justify={'center'}
+                            style={{
+                                borderRadius: '15px',
+                            }}
+                        >
+                            <p>Rs. 00000</p>
+                        </SButton>
+                    </SFlex>
+                    <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                        <SImage
+                            src={'/4444.jpg'}
+                            backgroundSize={'cover'}
+                            width={'100%'}
+                            height={'100%'}
+                            align={'center'}
+                            justify={'center'}
+                            style={{ borderRadius: '15px' }}
+                        >
+                            <SButton
+                                width={100}
+                                height={20}
+                                align={'start'}
+                                justify={'center'}
+                                style={{
+                                    borderRadius: '15px',
+                                }}
+                            >
+                                <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                            </SButton>
+                        </SImage>
+                        <SButton
+                            width={100}
+                            height={20}
+                            align={'start'}
+                            justify={'center'}
+                            style={{
+                                borderRadius: '15px',
+                            }}
+                        >
+                            <p>Rs. 00000</p>
+                        </SButton>
+                    </SFlex>
+                </SFlex>
+                <br />
+                <SFlex align={'center'} justify={'space-between'} width={'100%'} paddingTop={20} paddingBottom={10} padding={10}>
+                    <SFlex direction={'column'} align={'center'} width={'50%'}>
+                        <h5>Find a tour by Destintion</h5>
+                        <SFlex>
+                            <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                                <SImage
+                                    src={'/4444.jpg'}
+                                    backgroundSize={'cover'}
+                                    width={'100%'}
+                                    height={'100%'}
+                                    align={'center'}
+                                    justify={'center'}
+                                    style={{ borderRadius: '15px' }}
+                                >
+                                    <SButton
+                                        width={100}
+                                        height={20}
+                                        align={'start'}
+                                        justify={'center'}
+                                        style={{
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        <h5 style={{ color: 'white' }}>PURI</h5>
+                                    </SButton>
+                                </SImage>
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <p>Rs. 00000</p>
+                                </SButton>
                             </SFlex>
-                            <h6 style={{ color: 'whitesmoke' }}>ROYAL MAGIC BOOK</h6>
-                            <h8 style={{ color: 'whitesmoke' }}>The book's owner have the power of controlling p....</h8>
-                            <s style={{ color: 'whitesmoke' }}>Current bid</s>
-                            <h6 style={{ color: 'whitesmoke' }}>1.09 ETH</h6>
-                        </SFlex>
-                        <SImage src={'/303.jpeg'} backgroundSize={'contain'} height={150} width={150} />
-                    </SFlex>
-                </SFlex>
-            </SFlex>
-            <SFlex paddingTop={15} justify={'space-between'} width={'100%'}>
-                <h5>Recommended NFTs</h5>
-                <h5>⬅️04/12➡️</h5>
-            </SFlex>
-            <SFlex paddingBottom={10}>
-                <SFlex width={188} height={140} paddingTop={10} className={styles.Box} align={'center'} justify={'center'}>
-                    <SFlex direction={'column'} padding={10}>
-                        <SFlex>
-                            <p style={{ color: 'white' }}>Hextech's key</p>
-                            <br />
-                            <FaRegHeart style={{ color: 'white' }}></FaRegHeart>
-                        </SFlex>
-                        <SImage src={'/55.jpeg'} backgroundSize={'contain'} height={70} width={'100%'} />
-                        <SFlex justify={'space-between'} width={'100%'}>
-                            <h6 style={{ color: 'white' }}> 0.93 ETH </h6>
-                            <br />
-                            <h6 style={{ color: 'white' }}> $ 3,100</h6>
-                        </SFlex>
-                    </SFlex>
-                </SFlex>
-
-                <SFlex width={188} height={140} paddingTop={10} className={styles.Box} align={'center'} justify={'center'}>
-                    <SFlex direction={'column'} padding={10} width={'100%'}>
-                        <SFlex>
-                            <p style={{ color: 'white' }}>Knight silver Axe</p>
-                            💛
-                        </SFlex>
-                        <SImage src={'/66.jpg'} backgroundSize={'contain'} height={70} width={'100%'} />
-                        <SFlex justify={'space-between'} width={'100%'}>
-                            <h6 style={{ color: 'white' }}> 0.52 ETH </h6>
-                            <br />
-                            <h6 style={{ color: 'white' }}> $ 1,732</h6>
+                            <SFlex width={180} height={150} className={styles.Box} direction={'column'} align={'end'}>
+                                <SImage
+                                    src={'/4444.jpg'}
+                                    backgroundSize={'cover'}
+                                    width={'100%'}
+                                    height={'100%'}
+                                    align={'center'}
+                                    justify={'center'}
+                                    style={{ borderRadius: '15px' }}
+                                >
+                                    <SButton
+                                        width={100}
+                                        height={20}
+                                        align={'start'}
+                                        justify={'center'}
+                                        style={{
+                                            borderRadius: '15px',
+                                        }}
+                                    >
+                                        <a href="https://www.holidify.com/places/darjeeling/map-view.html">DARJEELING</a>
+                                    </SButton>
+                                </SImage>
+                                <SButton
+                                    width={100}
+                                    height={20}
+                                    align={'start'}
+                                    justify={'center'}
+                                    style={{
+                                        borderRadius: '15px',
+                                    }}
+                                >
+                                    <p>Rs. 00000</p>
+                                </SButton>
+                            </SFlex>
                         </SFlex>
                     </SFlex>
-                </SFlex>
-                <SFlex width={188} height={140} paddingTop={10} className={styles.Box} align={'center'} justify={'center'}>
-                    <SFlex direction={'column'} padding={10}>
-                        <SFlex>
-                            <p style={{ color: 'white' }}>Wizard's Poition</p>
-                            <br />
-                            <FaRegHeart style={{ color: 'white' }}></FaRegHeart>
-                        </SFlex>
-                        <SImage src={'/77.jpg'} backgroundSize={'contain'} height={70} width={'100%'} />
-                        <SFlex justify={'space-between'} width={'100%'}>
-                            <h6 style={{ color: 'white' }}> 0.78 ETH </h6>
-                            <br />
-                            <h6 style={{ color: 'white' }}> $ 2,600</h6>
-                        </SFlex>
-                    </SFlex>
-                </SFlex>
-                <SFlex width={188} height={140} paddingTop={10} className={styles.Box} align={'center'} justify={'center'}>
-                    <SFlex direction={'column'} padding={10}>
-                        <SFlex>
-                            <p style={{ color: 'white' }}>Eagle's Archary</p>
-                            <br />
-                            <FaRegHeart style={{ color: 'white' }}></FaRegHeart>
-                        </SFlex>
-                        <SImage src={'/88.jpg'} backgroundSize={'contain'} height={70} width={'100%'} />
-                        <SFlex justify={'space-between'} width={'100%'}>
-                            <h6 style={{ color: 'white' }}> 0.39 ETH </h6>
-                            <br />
-                            <h6 style={{ color: 'white' }}> $ 1,326</h6>
+                    <SFlex direction={'column'} align={'center'} width={'50%'}>
+                        <h5 style={{ color: 'whitesmoke' }}>Find a tour by Type</h5>
+                        <SFlex
+                            direction={'column'}
+                            align={'start'}
+                            style={{ border: '2px solid blue', borderRadius: '10px', background: 'darkslategrey' }}
+                            width={'90%'}
+                            height={150}
+                            justify={'space-between'}
+                            padding={5}
+                            paddingTop={5}
+                        >
+                            <SFlex>
+                                <CiDiscount1 style={{color: 'whitesmoke'}}></CiDiscount1>
+                                <h6 style={{ color: 'whitesmoke' }}>Deals & Discount</h6>
+                            </SFlex>
+                            <SFlex>
+                                <GiMeal style={{color: 'whitesmoke'}}></GiMeal>
+                                <h6 style={{ color: 'whitesmoke' }}>Meals Included</h6>
+                            </SFlex>
+                            <SFlex>
+                                <LuHotel style={{color: 'whitesmoke'}}></LuHotel>
+                                <h6 style={{ color: 'whitesmoke' }}>Accomodations</h6>
+                            </SFlex>
+                            <SFlex>
+                                <FaMapMarkedAlt style={{color: 'whitesmoke'}}></FaMapMarkedAlt>
+                                <h6 style={{ color: 'whitesmoke' }}>Teaveling</h6>
+                            </SFlex>
                         </SFlex>
                     </SFlex>
                 </SFlex>

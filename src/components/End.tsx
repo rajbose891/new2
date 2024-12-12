@@ -45,17 +45,7 @@ export function End () {
                         padding={20}
                     >
                         <SFlex justify={'space-between'} paddingTop={15}>
-                            <SImage
-                                src={'/505.jpeg'}
-                                backgroundSize={'cover'}
-                                height={90}
-                                width={60}
-                                style={{ border: '1px solid black', borderRadius: '20px' }}
-                            />
-                            <SFlex paddingTop={30} direction={'column'}>
-                                <h2 color={'white'}>8.99 ETH</h2>
-                                <h4>$28,768</h4>
-                            </SFlex>
+
                         </SFlex>
                         <SFlex width={'100%'} height={70} align={'center'} justify={'center'} style={{ background: 'goldenrod', borderRadius: '10px' }}>
                             <h5 style={{ color: 'white' }}>Deposit </h5>
